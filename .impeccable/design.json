@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T21:57:14.244185+00:00",
+  "title": "Design System: ContractOps",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Background"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface"
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Foreground"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted"
+      },
+      "metadata": {
+        "role": "neutral",
+        "displayName": "Metadata"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border"
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary"
+      },
+      "ring": {
+        "role": "semantic",
+        "displayName": "Ring"
+      },
+      "navigation-active": {
+        "role": "semantic",
+        "displayName": "Navigation Active"
+      },
+      "navigation-text": {
+        "role": "semantic",
+        "displayName": "Navigation Text"
+      },
+      "attention-background": {
+        "role": "semantic",
+        "displayName": "Attention Background"
+      },
+      "attention-border": {
+        "role": "semantic",
+        "displayName": "Attention Border"
+      },
+      "attention-text": {
+        "role": "semantic",
+        "displayName": "Attention Text"
+      },
+      "danger-background": {
+        "role": "semantic",
+        "displayName": "Danger Background"
+      },
+      "danger-text": {
+        "role": "semantic",
+        "displayName": "Danger Text"
+      },
+      "success-background": {
+        "role": "semantic",
+        "displayName": "Success Background"
+      },
+      "success-text": {
+        "role": "semantic",
+        "displayName": "Success Text"
+      },
+      "info-background": {
+        "role": "semantic",
+        "displayName": "Info Background"
+      },
+      "info-text": {
+        "role": "semantic",
+        "displayName": "Info Text"
+      },
+      "neutral-background": {
+        "role": "semantic",
+        "displayName": "Neutral Background"
+      },
+      "neutral-text": {
+        "role": "semantic",
+        "displayName": "Neutral Text"
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page heading",
+        "purpose": "Page purpose and title."
+      },
+      "title": {
+        "displayName": "Panel heading",
+        "purpose": "Section hierarchy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Interface text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact control labels."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background .15s",
+        "purpose": "Button state changes."
+      },
+      {
+        "name": "navigation-background",
+        "value": "background .18s ease",
+        "purpose": "Navigation hover."
+      },
+      {
+        "name": "mobile-rail",
+        "value": "transform .2s ease-out",
+        "purpose": "Dismissible mobile navigation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1200px"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "850px"
+      },
+      {
+        "name": "small-phone",
+        "value": "480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shared primary action variant.",
+      "html": "<button class=\"ds-button-primary\">View requests</button>",
+      "css": ".ds-button-primary{font-family:var(--font-interface,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:6px;min-height:36px;padding:8px 13px;white-space:nowrap;font-size:11px;font-weight:600;border:1px solid transparent;transition:background .15s;cursor:pointer;background:var(--primary,#176654);color:white;}.ds-button-primary:focus-visible{outline:2px solid var(--ring,#25836e);outline-offset:4px}.ds-button-primary:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Shared outline action variant.",
+      "html": "<button class=\"ds-button-outline\">View requests</button>",
+      "css": ".ds-button-outline{font-family:var(--font-interface,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:6px;min-height:36px;padding:8px 13px;white-space:nowrap;font-size:11px;font-weight:600;border:1px solid transparent;transition:background .15s;cursor:pointer;background:white;border-color:#dce2e7;color:#3f4c5a;}.ds-button-outline:hover{background:#f0f5f2;}.ds-button-outline:focus-visible{outline:2px solid var(--ring,#25836e);outline-offset:4px}.ds-button-outline:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Shared ghost action variant.",
+      "html": "<button class=\"ds-button-ghost\">View requests</button>",
+      "css": ".ds-button-ghost{font-family:var(--font-interface,Arial,sans-serif);display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:6px;min-height:36px;padding:8px 13px;white-space:nowrap;font-size:11px;font-weight:600;border:1px solid transparent;transition:background .15s;cursor:pointer;}.ds-button-ghost:hover{background:#edf2ef;}.ds-button-ghost:focus-visible{outline:2px solid var(--ring,#25836e);outline-offset:4px}.ds-button-ghost:disabled{opacity:.5;cursor:not-allowed}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "Search control for request tables.",
+      "html": "<label class=\"ds-search\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input aria-label=\"Search requests\" placeholder=\"Search requests\u2026\"/></label>",
+      "css": ".ds-search{font-family:var(--font-interface,Arial,sans-serif);display:inline-flex;gap:8px;align-items:center;padding:7px 10px;border:1px solid var(--border,#e5e9ee);border-radius:5px;color:#6e7883}.ds-search input{font-family:inherit;border:0;background:none;font-size:10px;width:130px;color:var(--foreground,#202b39)}.ds-search input::placeholder{color:#6b7786}.ds-search input:focus-visible{outline:2px solid var(--ring,#25836e);outline-offset:4px}"
+    },
+    {
+      "name": "Active Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Selected rail destination.",
+      "html": "<nav aria-label=\"Example navigation\"><a class=\"ds-nav\" href=\"#\" aria-current=\"page\">Overview</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-interface,Arial,sans-serif);display:flex;align-items:center;gap:12px;padding:11px 13px;font-size:12px;font-weight:550;border-radius:7px;text-decoration:none;background:#eaf3ef;color:#1c6553;transition:background .18s ease}.ds-nav:hover{background:#eaf3ef}.ds-nav:focus-visible{outline:2px solid var(--ring,#25836e);outline-offset:4px}"
+    },
+    {
+      "name": "Blocked Status",
+      "kind": "chip",
+      "refersTo": "status-danger",
+      "description": "Compact written status with supplemental dot.",
+      "html": "<span class=\"ds-status\"><span></span>Blocked</span>",
+      "css": ".ds-status{font-family:var(--font-interface,Arial,sans-serif);display:inline-flex;align-items:center;gap:5px;font-size:9px;padding:4px 7px;border-radius:5px;white-space:nowrap;font-weight:500;background:#fcf0eb;color:#a25439}.ds-status>span{width:4px;height:4px;border-radius:50%;background:currentColor}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Bordered content section with compact heading.",
+      "html": "<section class=\"ds-panel\"><header><h2>Reimbursement requests</h2><p>Track preparation and supporting evidence.</p></header></section>",
+      "css": ".ds-panel{font-family:var(--font-interface,Arial,sans-serif);background:white;border:1px solid var(--border,#e5e9ee);border-radius:10px;overflow:hidden;color:var(--foreground,#202b39)}.ds-panel header{padding:21px 22px}.ds-panel h2{margin:0;font-size:16px;font-weight:650;letter-spacing:-.018em}.ds-panel p{margin:4px 0 0;font-size:11px;color:var(--muted,#667181)}"
+    },
+    {
+      "name": "Request Filter",
+      "kind": "chip",
+      "description": "Selected in-place request filter.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"true\">All requests <span>4</span></button>",
+      "css": ".ds-filter{font-family:var(--font-interface,Arial,sans-serif);border:0;padding:6px 10px;border-radius:5px;font-size:10px;white-space:nowrap;color:#2d5446;background:#edf3ef;font-weight:600;cursor:pointer}.ds-filter span{background:#dae8df;margin-left:7px;padding:1px 5px;border-radius:3px;font-size:9px}.ds-filter:focus-visible{outline:2px solid var(--ring,#25836e);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Operate mode",
+    "overview": "A professional light workspace with clear navigation and restrained color. White panels and a white rail sit on a pale background; thin rules organize dense administrative information. The next administrative action should be easy to identify.",
+    "keyCharacteristics": [
+      "Light surfaces and slate typography",
+      "Restrained forest green",
+      "Dense, ordered tables"
+    ],
+    "rules": [],
+    "dos": [
+      "Do retain the professional light palette and fictional demo context.",
+      "Do keep focus visible and table overflow local."
+    ],
+    "donts": [
+      "Don't introduce decorative imagery or shadows.",
+      "Don't imply unavailable workflows work."
+    ]
+  }
+}
